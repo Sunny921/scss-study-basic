@@ -1,9 +1,9 @@
-.wrapper {
+.mother {
   height: 100vh;
   display: flex;
-  flex-direction: column; 
+  /* flex-direction: column;  */
   justify-content: space-around; 
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 /*
@@ -19,9 +19,13 @@ flex-direction has 'row' and 'column'
 ✨ align-items: cross axis 의 아이템 위치 변경
 
 */
-.box {
+.child {
   width: 200px;
   height: 200px;
   background: peru;
   color: #fff;
+}
+
+.child:nth-child(1) {
+  align-self: center; /* align-self: 자기 자신의 cross axis를 제어 */
 }
