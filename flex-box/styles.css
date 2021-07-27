@@ -2,8 +2,11 @@
   height: 100vh;
   display: flex;
   /* flex-direction: column;  */
+  /* flex-direction: row-reverse;  */
   justify-content: space-around; 
   align-items: flex-start;
+  flex-wrap: wrap-reverse;
+  align-content: center;
 }
 
 /*
@@ -17,15 +20,17 @@ flex-direction has 'row' and 'column'
 ✨ default flex-direaction is 'row'
 ✨ justify-content: main axis 의 아이템 위치를 변경
 ✨ align-items: cross axis 의 아이템 위치 변경
+✨ align-self: 자기 자신의 cross axis 위치를 변경한다.
+✨ flex-wrap: 기본값은 'nowrap'으로 요소의 width값을 무시한채 한줄에 우겨넣는다. 이를 방지하기위해 'wrap'으로 변경해줄 수 있다. 
+✨ align-conent: flex-wrap 의 vertical 정렬을 수행한다.
 
 */
 .child {
+  display: flex;
+  justify-content: center;
+  align-items:center;
   width: 200px;
   height: 200px;
   background: peru;
   color: #fff;
-}
-
-.child:nth-child(1) {
-  align-self: center; /* align-self: 자기 자신의 cross axis를 제어 */
 }
