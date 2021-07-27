@@ -1,0 +1,27 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around; 
+  align-items: flex-end;
+}
+
+/*
+
+(Point)
+When flex-direction has 'row' the main axis is 'Horizontal' (수평축)
+and the cross axis is vertical (수직)
+
+flex-direction has 'row' and 'column'
+
+✨ default flex-direaction is 'row'
+✨ justify-content: main axis 의 아이템 위치를 변경
+✨ align-items: cross axis 의 아이템 위치 변경
+
+*/
+.box {
+  width: 200px;
+  height: 200px;
+  background: peru;
+  color: #fff;
+}
