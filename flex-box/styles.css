@@ -5,7 +5,7 @@
   /* flex-direction: row-reverse;  */
   justify-content: space-around; 
   align-items: flex-start;
-  flex-wrap: wrap-reverse;
+  flex-wrap: nowrap;
   align-content: center;
 }
 
@@ -23,14 +23,21 @@ flex-direction has 'row' and 'column'
 ✨ align-self: 자기 자신의 cross axis 위치를 변경한다.
 ✨ flex-wrap: 기본값은 'nowrap'으로 요소의 width값을 무시한채 한줄에 우겨넣는다. 이를 방지하기위해 'wrap'으로 변경해줄 수 있다. 
 ✨ align-conent: flex-wrap 의 vertical 정렬을 수행한다.
+✨ flex-shrink: child 에 지정할 수 있는 속성으로 view-port가 줄어들었을때 얼만큼 squeeze 할지 정한다 속성
+✨ flex-grow: child 에 지정할 수 있는 속성으로 박스의 여백이 생겼을때 해당 여백을 어떤 비율로 차지할지 정하는 속성
+✨ flex-basis: child 엘리먼트에 초기 크기를 지정하는것. main-axis에서 동작하며 flex-direction row 일땐 width, column 일땐 height로 동작한다.
 
 */
 .child {
   display: flex;
   justify-content: center;
   align-items:center;
-  width: 200px;
+  flex-basis: 150px;
   height: 200px;
   background: peru;
   color: #fff;
+}
+
+.child:nth-child(3) {
+  flex-shrink: 2;
 }
