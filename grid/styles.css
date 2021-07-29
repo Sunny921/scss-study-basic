@@ -4,16 +4,44 @@
   grid-template-rows: 50px 100px;
   gap: 10px;
 }
-
-/*
-
-(Point)
-grid-template-columns: width 
-grid-template-rows: height
-gap(column-gap, row-gap): 요소간의 gap (여백)을 지정한다.]
-
-*/
 .child {
   background: peru;
   color: #fff;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto, 200px);
+  grid-template-rows:  repeat(4, 200px);
+  grid-template-areas: 
+  "header header header header"
+  "content content content nav"
+  "content content content nav"
+  "footer footer footer footer"
+  ;
+}
+.header {
+  grid-area: header;
+  background-color: #2ecc71;
+}
+.content {
+  grid-area: content;
+  background-color: #3498db;
+}
+.nav {
+  grid-area: nav;
+  background-color: #8244ad;
+}
+.footer {
+  grid-area: footer;
+  background-color: #423451;
+}
+/*
+
+(Point)
+✨ grid-template-columns: width 
+✨ grid-template-rows: height
+✨ gap(column-gap, row-gap): 요소간의 gap (여백)을 지정한다.]
+✨ grid-template-areas: 지정한 'grid-area' 를 정해진 형식으로 채울 수 있다.
+
+*/
