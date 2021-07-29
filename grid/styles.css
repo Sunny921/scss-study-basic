@@ -1,0 +1,19 @@
+.mother {
+  display: grid;
+  grid-template-columns: 100px 100px 150px;
+  grid-template-rows: 50px 100px;
+  gap: 10px;
+}
+
+/*
+
+(Point)
+grid-template-columns: width 
+grid-template-rows: height
+gap(column-gap, row-gap): 요소간의 gap (여백)을 지정한다.]
+
+*/
+.child {
+  background: peru;
+  color: #fff;
+}
