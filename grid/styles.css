@@ -11,11 +11,12 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
+  /* grid-template-columns: repeat(4, 100px); */
+  grid-template-columns: [first] 100px [second] 100px [third] 100px [fourth] 100px [fifth];
   grid-template-rows:  repeat(4, 100px);
 }
 .header {
-  grid-column: 1 / -1;
+  grid-column: first / fifth;
   background-color: #2ecc71;
 }
 .content {
