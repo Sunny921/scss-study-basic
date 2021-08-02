@@ -7,11 +7,15 @@
 .grid {
   display: grid;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(4, 200px);
   /* justify-items: end; */
   /* align-items: end; */
-  place-items: start stretch;
+  /* place-items: start stretch; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  place-content: center center;
 }
 .header {
   /* grid-column: span 4; */
@@ -41,8 +45,10 @@
 ✨ grid-row-start / end: row 의 확장 범위를 지정한다.
 ✨ (shortcut) grid-column / grid-row: start/end 를 별도록 적는것을 줄여서 적을 수 있는 속성이다.
 ✨ fr (fraction) : 화면에서 요소의 넓이를 비율로 지정할때 사용
-✨ justify-items: 수평축의 아이템 위치를 지정한다. 기본값은 stretch
-✨ align-items: 수직축의 아이템 위치를 지정한다. 기본값은 stretch
+✨ justify-items: 수평축의 아이템(cell) 위치를 지정한다. 기본값은 stretch
+✨ align-items: 수직축의 아이템(cell) 위치를 지정한다. 기본값은 stretch
 ✨ place-items: align-items/justify-items 를 합쳐놓은 속성으로 수직/수평축 순으로 지정된다.
-
+✨ justify-content: 수평축의 grid 전체의 위치를 지정한다.
+✨ align-content: 수직축의 grid 전체의 위치를 지정한다.
+✨ place-content: align-content / justify-content 를 합쳐놓은 속성
 */
