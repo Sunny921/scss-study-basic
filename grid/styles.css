@@ -20,6 +20,9 @@
 .header {
   /* grid-column: span 4; */
   background-color: #2ecc71;
+  /* align-self: end; */
+  /* justify-self: center; */
+  place-self: end end;
 }
 .content {
   /* grid-column: 1 / -2; */
