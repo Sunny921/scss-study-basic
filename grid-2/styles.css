@@ -2,7 +2,7 @@
 .grid {
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   grid-template-rows: repeat(4, 200px);
   grid-auto-flow: row;
   grid-auto-columns: 100px;
@@ -21,4 +21,5 @@
 ✨ grid-auto-flow: 기본값은 'row' 
 ✨ grid-auto-rows: 지정한 row 수를 넘겼을때 아이템의 크기를 결정한다. (flow가 row 일때 동작)
 ✨ grid-auto-colums: 지정한 column 수를 넘겼을때 아이템의 크기를 결정한다. (flow가 column 일때 동작)
+✨ minmax: 최소/최대 크기를 지정할 수 있다.
 */
